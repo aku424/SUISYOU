@@ -1,0 +1,19 @@
+.test {
+  color: tomato;
+}
+@media screen and (max-width: 768px) {
+  .test {
+    color: blue;
+  }
+}
+@media screen and (min-width: 769px) {
+  .test {
+    color: green;
+  }
+}
+@media (hover:hover) and (min-width: 768px) {
+  .test:hover {
+    color: red;
+    font-size: calc(40 / 16 * 1rem);
+  }
+}

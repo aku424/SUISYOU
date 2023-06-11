@@ -1,0 +1,21 @@
+@use '../base';
+@use '../mixin' as mixin;
+
+.test {
+    color: tomato;
+
+    @include mixin.media(sm){
+        color: blue;
+    }
+
+    @include mixin.media(pc){
+        color: green;
+    }
+
+    @include mixin.media(hover) {
+        &:hover{
+            color: red;
+            font-size: mixin.rem(40);
+        }
+    }
+}

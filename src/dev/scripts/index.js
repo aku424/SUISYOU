@@ -1,5 +1,13 @@
-console.log('test');
+import Header from "./modules/header";
 
-console.log('ddddddddffffdddd');
+// ヘッダー
+(()=>{
+    const root = document.querySelector('.js-header');
 
-console.log('ddddddddffffdddd');
+    if (!root) {
+        return;
+    }
+
+    const instance = new Header(root);
+    instance.init();
+})();
