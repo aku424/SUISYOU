@@ -1,0 +1,22 @@
+[11-Jun-2023 07:44:33 UTC] PHP Warning:  filemtime(): stat failed for /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/common/scripts/splide.min.js in /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/functions.php on line 8
+[11-Jun-2023 07:44:33 UTC] PHP Stack trace:
+[11-Jun-2023 07:44:33 UTC] PHP   1. {main}() /Users/takashimatakuto/Local Sites/suisyou/app/public/index.php:0
+[11-Jun-2023 07:44:33 UTC] PHP   2. require() /Users/takashimatakuto/Local Sites/suisyou/app/public/index.php:17
+[11-Jun-2023 07:44:33 UTC] PHP   3. require_once() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-blog-header.php:19
+[11-Jun-2023 07:44:33 UTC] PHP   4. include() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/template-loader.php:106
+[11-Jun-2023 07:44:33 UTC] PHP   5. get_header() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/front-page.php:2
+[11-Jun-2023 07:44:33 UTC] PHP   6. locate_template() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/general-template.php:48
+[11-Jun-2023 07:44:33 UTC] PHP   7. load_template() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/template.php:718
+[11-Jun-2023 07:44:33 UTC] PHP   8. require_once() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/template.php:783
+[11-Jun-2023 07:44:33 UTC] PHP   9. wp_head() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/header.php:9
+[11-Jun-2023 07:44:33 UTC] PHP  10. do_action() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/general-template.php:3049
+[11-Jun-2023 07:44:33 UTC] PHP  11. WP_Hook->do_action() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/plugin.php:517
+[11-Jun-2023 07:44:33 UTC] PHP  12. WP_Hook->apply_filters() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/class-wp-hook.php:332
+[11-Jun-2023 07:44:33 UTC] PHP  13. wp_enqueue_scripts() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/class-wp-hook.php:308
+[11-Jun-2023 07:44:33 UTC] PHP  14. do_action() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/script-loader.php:2194
+[11-Jun-2023 07:44:33 UTC] PHP  15. WP_Hook->do_action() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/plugin.php:517
+[11-Jun-2023 07:44:33 UTC] PHP  16. WP_Hook->apply_filters() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/class-wp-hook.php:332
+[11-Jun-2023 07:44:33 UTC] PHP  17. my_script_init() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-includes/class-wp-hook.php:308
+[11-Jun-2023 07:44:33 UTC] PHP  18. filemtime() /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/functions.php:8
+[11-Jun-2023 09:53:50 UTC] PHP Parse error:  syntax error, unexpected 'crossorigin' (T_STRING), expecting ')' in /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/functions.php on line 6
+[11-Jun-2023 09:53:51 UTC] PHP Parse error:  syntax error, unexpected 'crossorigin' (T_STRING), expecting ')' in /Users/takashimatakuto/Local Sites/suisyou/app/public/wp-content/themes/SUISYOU/functions.php on line 6

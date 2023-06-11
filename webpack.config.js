@@ -30,10 +30,16 @@ module.exports = {
     }),
 
     new CopyWebpackPlugin({
-      patterns: [{
-        from: path.resolve(__dirname, 'src/images/'),
-        to: path.resolve(__dirname, 'app/public/wp-content/themes/SUISYOU/')
-      }]
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/images/'),
+          to: path.resolve(__dirname, 'app/public/wp-content/themes/SUISYOU/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/dev/scripts/library'),
+          to: path.resolve(__dirname, 'app/public/wp-content/themes/SUISYOU/common/scripts/library')
+        }
+      ],
     }),
 
     new ImageminWebpWebpackPlugin({

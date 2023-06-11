@@ -19,3 +19,115 @@
         }
     }
 }
+
+// l-content
+//=====================================
+.l-content {
+    background-position: center;
+    background-size: cover;
+    padding: 32px;
+    box-sizing: content-box;
+
+    &.about {
+
+    }
+
+    &.menu {
+
+    }
+
+    &.course {
+
+    }
+
+    &.contact {
+
+    }
+}
+
+.l-content__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.l-content__inner--2col {
+    @include mixin.media(pc){
+        display: grid;
+        grid-template-columns: 64px auto;
+    }
+}
+
+.l-content__body {
+    @include mixin.media(pc){
+        .l-content__inner--2col & {
+            grid-column: 2 / -1;
+        }
+    }
+}
+
+.l-content__hading {
+    writing-mode: vertical-rl;
+
+    @include mixin.media(pc){
+        .l-content__inner--2col & {
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+
+
+// MV
+//=====================================
+.mv {
+    position: relative;
+}
+
+.mv__inner {
+    display: grid;
+    grid-template-rows: auto 60px;
+}
+
+.mv__listWrap {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.mv__pagination {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    gap: 20px;
+    padding-left: 32px;
+    align-items: start;
+}
+
+.mv__paginationItem {
+    width: 40px;
+    height: 40px;
+    border-radius: 25em;
+    border: 2px solid #fff;
+    background-color: transparent;
+
+    &.is-active {
+        background-color: #fff;
+    }
+}
+
+.mv__scroll {
+    background-image: url('../img/icon_common_01.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 50px;
+    font-size: mixin.rem(0);
+    position: absolute;
+    bottom: 40px;
+    right: 32px;
+}
+
+

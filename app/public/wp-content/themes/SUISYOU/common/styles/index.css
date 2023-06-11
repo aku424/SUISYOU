@@ -1,3 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+button {
+  cursor: pointer;
+}
+
 .test {
   color: tomato;
 }
@@ -16,4 +57,87 @@
     color: red;
     font-size: calc(40 / 16 * 1rem);
   }
+}
+
+.l-content {
+  background-position: center;
+  background-size: cover;
+  padding: 32px;
+  box-sizing: content-box;
+}
+.l-content__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+@media screen and (min-width: 769px) {
+  .l-content__inner--2col {
+    display: grid;
+    grid-template-columns: 64px auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .l-content__inner--2col .l-content__body {
+    grid-column: 2/-1;
+  }
+}
+
+.l-content__hading {
+  writing-mode: vertical-rl;
+}
+@media screen and (min-width: 769px) {
+  .l-content__inner--2col .l-content__hading {
+    grid-column: 1/2;
+  }
+}
+
+.mv {
+  position: relative;
+}
+
+.mv__inner {
+  display: grid;
+  grid-template-rows: auto 60px;
+}
+
+.mv__listWrap {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.mv__pagination {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+  gap: 20px;
+  padding-left: 32px;
+  align-items: start;
+}
+
+.mv__paginationItem {
+  width: 40px;
+  height: 40px;
+  border-radius: 25em;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.mv__paginationItem.is-active {
+  background-color: #fff;
+}
+
+.mv__scroll {
+  background-image: url("../img/icon_common_01.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 50px;
+  font-size: calc(0 / 16 * 1rem);
+  position: absolute;
+  bottom: 40px;
+  right: 32px;
 }
