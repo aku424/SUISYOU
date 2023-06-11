@@ -13,7 +13,6 @@ module.exports = {
   output: {
     clean: true,
     path: path.resolve(__dirname, './app/public/wp-content/themes/SUISYOU/common/scripts'),
-    path: path.resolve(__dirname, './app/public/wp-content/themes/SUISYOU/common/scripts'),
     filename: "index.js"
   },
 
