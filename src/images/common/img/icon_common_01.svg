@@ -1,15 +1,1 @@
-<!--?xml version="1.0" encoding="utf-8"?-->
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 32px; height: 32px; opacity: 1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#4B4B4B;}
-</style>
-<g>
-	<path class="st0" d="M323.682,323.349h-135.38c-8.138,0-14.738,6.6-14.738,14.73v17.884c0,8.138,6.6,14.738,14.738,14.738h135.38
-		c8.139,0,14.739-6.6,14.739-14.738v-17.884C338.42,329.949,331.82,323.349,323.682,323.349z" style="fill: rgb(75, 75, 75);"></path>
-	<path class="st0" d="M256,0c-91.181,0-165.1,73.928-165.1,165.1c0,58.685,30.696,110.098,76.829,139.382h176.544
-		c46.133-29.284,76.829-80.697,76.829-139.382C421.101,73.928,347.181,0,256,0z" style="fill: rgb(75, 75, 75);"></path>
-	<polygon class="st0" points="228.128,440.796 228.128,512 283.871,512 283.871,440.77 310.061,387.979 201.922,387.979 	" style="fill: rgb(75, 75, 75);"></polygon>
-</g>
-</svg>
+<svg height="42" viewBox="0 0 30 42" width="30" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m7 3a4 4 0 1 0 4 4 4 4 0 0 0 -4-4m0-3a7 7 0 1 1 -7 7 7 7 0 0 1 7-7z" transform="matrix(-1 0 0 -1 22 32.999)"/><path d="m15 3a12 12 0 0 0 -12 12v12a12 12 0 0 0 20.485 8.485 11.921 11.921 0 0 0 3.515-8.485v-12a12 12 0 0 0 -12-12m0-3a15 15 0 0 1 15 15v12a15 15 0 0 1 -30 0v-12a15 15 0 0 1 15-15z"/><path d="m674 11294.473a1.5 1.5 0 0 1 -1.5-1.5v-3.225a1.5 1.5 0 0 1 3 0v3.225a1.5 1.5 0 0 1 -1.5 1.5z" transform="matrix(-1 0 0 -1 689 11324.688)"/></g></svg>

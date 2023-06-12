@@ -8,4 +8,20 @@ $bpl: 1200;
 
 //  font-family
 // =============================
-$ff-base: 'PT Sans', sans-serif;
+$ff_base: 'PT Sans', sans-serif;
+
+//  color
+// =============================
+$base_light: #fff;
+$base_dark: #999;
+$base_light_dark: #222;
+
+// font-color
+$font_base_color: $base_light;
+$font_sub_color: $base_dark;
+$font_sub_dark_color: $base_light_dark;
+
+// background-color
+
+// border-color
+$border_base_color: $base_light;

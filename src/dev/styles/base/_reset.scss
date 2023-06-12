@@ -1,3 +1,6 @@
+@use './_variable' as base;
+
+
 // リセット
 * {
     -webkit-box-sizing: border-box;
@@ -19,11 +22,10 @@ header, footer, nav, section, article, aside, figure, figcaption {
 
 html {
     font-size: 16px;
-    font-family: 'PT Sans', sans-serif;
-}
-
-body {
-    line-height: 1;
+    font-family: base.$ff_base;
+    color: base.$base_light;
+    letter-spacing: .1rem;
+    line-height: 2.25;
 }
 
 ol, ul {

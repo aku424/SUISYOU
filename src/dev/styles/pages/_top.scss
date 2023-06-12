@@ -1,4 +1,4 @@
-@use '../base';
+@use '../base' as base;
 @use '../mixin' as mixin;
 
 .test {
@@ -20,16 +20,34 @@
     }
 }
 
+/*====================================================================
+ページ共通スタイル
+====================================================================*/
+
 // l-content
 //=====================================
 .l-content {
     background-position: center;
     background-size: cover;
-    padding: 32px;
+    padding: 40px;
     box-sizing: content-box;
 
-    &.about {
+    @include mixin.media(pc){
+        padding: 80px;
+    }
 
+    &.information {
+        background-image: image-set(
+            url("../../img/img_index_03-sp.webb") type("image/webp"),
+            url("../../img/img_index_03-sp.png") type("image/png")
+        );
+
+        @include mixin.media(pc){
+            background-image: image-set(
+                url("../../img/img_index_03-pc.webb") type("image/webp"),
+                url("../../img/img_index_03-pc.png") type("image/png")
+            );
+        }
     }
 
     &.menu {
@@ -51,32 +69,20 @@
     box-sizing: content-box;
 }
 
-.l-content__inner--2col {
-    @include mixin.media(pc){
-        display: grid;
-        grid-template-columns: 64px auto;
-    }
-}
-
 .l-content__body {
-    @include mixin.media(pc){
-        .l-content__inner--2col & {
-            grid-column: 2 / -1;
-        }
-    }
-}
-
-.l-content__hading {
-    writing-mode: vertical-rl;
-
-    @include mixin.media(pc){
-        .l-content__inner--2col & {
-            grid-column: 1 / 2;
-        }
-    }
+    
 }
 
 
+// m-subTitle
+//=====================================
+.m-subTitle {
+    font-size: mixin.rem(18);
+    color: base.$font_sub_color;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    line-height: 1;
+}
 
 // MV
 //=====================================
@@ -118,16 +124,132 @@
 }
 
 .mv__scroll {
+    position: absolute;
+    bottom: 40px;
+    right: 32px;
+
+    &::before{
+        width: 28.84vw;
+        height: 53.66vw;
+        position: absolute;
+        content: '';
+        background-position: center;
+        background-size: cover;
+        right: 0;
+        bottom: -21vw;
+        background-image: url('../../img/img_index_01.png');
+    }
+}
+
+.mv__scrollText {
     background-image: url('../img/icon_common_01.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 30px;
-    height: 50px;
+    height: 42px;
     font-size: mixin.rem(0);
     position: absolute;
     bottom: 40px;
     right: 32px;
+    z-index: 1;
 }
+
+
+// information
+//=====================================
+
+.un-information {
+
+}
+
+.un-information__layout {
+    display: grid;
+    grid-template-columns: min-content minmax(0, 1fr);
+    grid-template-rows: min-content auto 1fr;
+    grid-template-areas:
+        'heading sub-heading'
+        'heading media'
+        'contents contents';
+    gap: 0 40px;
+
+    @include mixin.media(pc){
+        grid-template-columns: 28px calc((572 / 1200) * 100%) calc((596 / 1200) * 100%);
+        grid-template-rows: 110px 1fr;
+        grid-template-areas:
+            "heading sub-heading media"
+            "heading contents media";
+        gap: 70px 0;
+    }
+}
+
+.un-information__hading {
+    grid-area: heading;
+    font-size: mixin.rem(28);
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    letter-spacing: .4em;
+    line-height: 2rem;
+
+    @include mixin.media(pc){
+        margin-top: 90px;
+    }
+}
+
+.un-information__subHeading {
+    grid-area: sub-heading;
+
+    @include mixin.media(pc){
+        margin-top: auto;
+        margin-left: 72px;
+    }
+}
+
+.un-information__media {
+    position: relative;
+    grid-area: media;
+    margin-top: 38px;
+
+    @include mixin.media(pc){
+        margin-left: 80px;
+    }
+}
+
+.un-information__contents {
+    grid-area: contents;
+    margin-top: 126px;
+
+    @include mixin.media(pc){
+        margin-left: 72px;
+        margin-top: 0;
+    }
+}
+
+.un-information__textItem {
+    & + & {
+        margin-top: 24px;
+    }
+}
+
+.un-information__mediaBubble {
+    position: absolute;
+    width: 192px;
+    left: -47px;
+    bottom: -96px;
+    @include mixin.media(pc){
+        width: 212px;
+        left: -280px;
+        bottom: auto;
+        top: -20px;
+    }
+}
+
+.un-information__button {
+    margin-top: 40px;
+    // @include mixin.media(pc){
+    // }
+}
+
+
 
 
