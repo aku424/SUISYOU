@@ -28,6 +28,10 @@ html {
     line-height: 2.25;
 }
 
+body {
+    background-color: base.$background_base_color;
+}
+
 ol, ul {
     list-style: none;
     list-style-type: none;

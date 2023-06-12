@@ -236,6 +236,7 @@
     width: 192px;
     left: -47px;
     bottom: -96px;
+
     @include mixin.media(pc){
         width: 212px;
         left: -280px;
@@ -246,10 +247,245 @@
 
 .un-information__button {
     margin-top: 40px;
-    // @include mixin.media(pc){
-    // }
+}
+
+// un-menu
+//=====================================
+.un-menu {
+    
+}
+
+.un-menu__layout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    @include mixin.media(pc){
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 50px;
+        align-items: flex-end;
+    }
+}
+
+.un-menu__contents {
+    position: relative;
+}
+
+.un-menu__contentsBubble {
+    position: absolute;
+    top: -24px;
+    left: -22px;
+
+    @include mixin.media(pc){
+        top: -24px;
+        left: -22px;
+    }
 }
 
 
+.un-menu__left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        'heading heading'
+        'contents01 contents01'
+        'contents02 contents03'
+    ;
+    gap: 24px;
+
+    @include mixin.media(pc){
+        width: calc(630 / 1150 * 100%);
+    }
+}
+
+.un-menu__heading {
+    grid-area: heading;
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+    width: fit-content;
+
+    @include mixin.media(pc){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.un-menu__headingMain {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        'text01 text03 text04'
+        'text02 text03 text04'
+    ;
+
+    @include mixin.media(pc){
+        column-gap: 10px;
+    }
+
+    :where([class^='un-menu__headingMainText']) {
+        line-height: 1;
+    }
+}
+
+.un-menu__headingMainText01 {
+    grid-area: text01;
+    font-size: mixin.rem(12);
+}
+
+.un-menu__headingMainText2 {
+    grid-area: text2;
+    font-size: mixin.rem(26);
+}
+
+.un-menu__headingMainText03 {
+    grid-area: text03;
+    font-size: mixin.rem(50);
+}
+
+.un-menu__headingMainText04 {
+    grid-area: text04;
+    font-size: mixin.rem(24);
+    display: flex;
+    align-items: flex-end;
+}
+
+.un-menu__leftContents01 {
+    grid-area: contents01;
+    margin-top: 12px;
+
+    @include mixin.media(pc){
+        margin-top: 24px;
+    }
+
+    :where(.un-menu__contentsBubble) {
+        width: 57%;
+
+        @include mixin.media(pc){
+            width: 40%;
+        }
+    }
+}
+
+.un-menu__leftContents02 {
+    grid-area: contents02;
+
+    :where(.un-menu__contentsBubble) {
+        width: 84%;
+
+        @include mixin.media(pc){
+            width: 55%;
+        }
+    }
+}
+
+.un-menu__leftContents03 {
+    grid-area: contents03;
+
+    :where(.un-menu__contentsBubble) {
+        width: 76%;
+        
+        @include mixin.media(pc){
+            width: 50%;
+        }
+    }
+}
+
+.un-menu__headingSub {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: flex-end;
+
+    :where([class^='un-menu__heading']) {
+        line-height: 1;
+    }
+}
+
+.un-menu__headingSubNotion {
+    font-size: mixin.rem(12);
+}
 
 
+.un-menu__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+        'contents01 contents02'
+        'contents03 contents03'
+    ;
+    gap: 36px 24px;
+
+    @include mixin.media(pc){
+        width: calc(520 / 1150 * 100%);
+    }
+}
+
+
+.un-menu__rightContents01 {
+    grid-area: contents01;
+
+    :where(.un-menu__contentsBubble) {
+        width: 76%;
+        
+        @include mixin.media(pc){
+            width: 60%;
+        }
+    }
+}
+
+.un-menu__rightContents02 {
+    grid-area: contents02;
+
+    :where(.un-menu__contentsBubble) {
+        width: 116%;
+    }
+}
+
+.un-menu__rightContents03 {
+    grid-area: contents03;
+
+    :where(.un-menu__contentsBubble) {
+        width: 50%;
+
+        @include mixin.media(pc){
+            width: 57%;
+        }
+    }
+}
+
+.un-menu__text {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.un-menu__textMenu,
+.un-menu__price {
+    font-size: mixin.rem(12);
+    font-weight: bold;
+}
+
+.un-menu__textMenu {
+    line-height: 1.8;
+}
+
+.un-menu__price {
+    display: inline-block;
+    width: fit-content;
+    margin-left: auto;
+    line-height: 1;
+}
+
+.un-menu__button {
+    margin-top: 36px;
+
+    @include mixin.media(pc){
+        margin-top: 50px;
+    }    
+}

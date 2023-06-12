@@ -59,10 +59,15 @@
 }
 
 .m-button__text {
+    font-size: mixin.rem(12);
     color: base.$font_base_color;
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
+
+    @include mixin.media(pc){
+        font-size: mixin.rem(16);
+    }
 }
 
 

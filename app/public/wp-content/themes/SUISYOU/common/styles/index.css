@@ -24,6 +24,10 @@ html {
   line-height: 2.25;
 }
 
+body {
+  background-color: #111;
+}
+
 ol, ul {
   list-style: none;
   list-style-type: none;
@@ -96,10 +100,16 @@ button {
 }
 
 .m-button__text {
+  font-size: calc(12 / 16 * 1rem);
   color: #fff;
   font-weight: bold;
   text-align: center;
   line-height: 1.2;
+}
+@media screen and (min-width: 769px) {
+  .m-button__text {
+    font-size: calc(16 / 16 * 1rem);
+  }
 }
 
 .test {
@@ -310,4 +320,237 @@ button {
 
 .un-information__button {
   margin-top: 40px;
+}
+
+.un-menu__layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__layout {
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    align-items: flex-end;
+  }
+}
+
+.un-menu__contents {
+  position: relative;
+}
+
+.un-menu__contentsBubble {
+  position: absolute;
+  top: -24px;
+  left: -22px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__contentsBubble {
+    top: -24px;
+    left: -22px;
+  }
+}
+
+.un-menu__left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "heading heading" "contents01 contents01" "contents02 contents03";
+  gap: 24px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__left {
+    width: 54.7826086957%;
+  }
+}
+
+.un-menu__heading {
+  grid-area: heading;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__heading {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.un-menu__headingMain {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "text01 text03 text04" "text02 text03 text04";
+}
+@media screen and (min-width: 769px) {
+  .un-menu__headingMain {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.un-menu__headingMain :where([class^=un-menu__headingMainText]) {
+  line-height: 1;
+}
+
+.un-menu__headingMainText01 {
+  grid-area: text01;
+  font-size: calc(12 / 16 * 1rem);
+}
+
+.un-menu__headingMainText2 {
+  grid-area: text2;
+  font-size: calc(26 / 16 * 1rem);
+}
+
+.un-menu__headingMainText03 {
+  grid-area: text03;
+  font-size: calc(50 / 16 * 1rem);
+}
+
+.un-menu__headingMainText04 {
+  grid-area: text04;
+  font-size: calc(24 / 16 * 1rem);
+  display: flex;
+  align-items: flex-end;
+}
+
+.un-menu__leftContents01 {
+  grid-area: contents01;
+  margin-top: 12px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__leftContents01 {
+    margin-top: 24px;
+  }
+}
+.un-menu__leftContents01 :where(.un-menu__contentsBubble) {
+  width: 57%;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__leftContents01 :where(.un-menu__contentsBubble) {
+    width: 40%;
+  }
+}
+
+.un-menu__leftContents02 {
+  grid-area: contents02;
+}
+.un-menu__leftContents02 :where(.un-menu__contentsBubble) {
+  width: 84%;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__leftContents02 :where(.un-menu__contentsBubble) {
+    width: 55%;
+  }
+}
+
+.un-menu__leftContents03 {
+  grid-area: contents03;
+}
+.un-menu__leftContents03 :where(.un-menu__contentsBubble) {
+  width: 76%;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__leftContents03 :where(.un-menu__contentsBubble) {
+    width: 50%;
+  }
+}
+
+.un-menu__headingSub {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: flex-end;
+}
+.un-menu__headingSub :where([class^=un-menu__heading]) {
+  line-height: 1;
+}
+
+.un-menu__headingSubNotion {
+  font-size: calc(12 / 16 * 1rem);
+}
+
+.un-menu__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas: "contents01 contents02" "contents03 contents03";
+  gap: 36px 24px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__right {
+    width: 45.2173913043%;
+  }
+}
+
+.un-menu__rightContents01 {
+  grid-area: contents01;
+}
+.un-menu__rightContents01 :where(.un-menu__contentsBubble) {
+  width: 76%;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__rightContents01 :where(.un-menu__contentsBubble) {
+    width: 60%;
+  }
+}
+
+.un-menu__rightContents02 {
+  grid-area: contents02;
+}
+.un-menu__rightContents02 :where(.un-menu__contentsBubble) {
+  width: 116%;
+}
+
+.un-menu__rightContents03 {
+  grid-area: contents03;
+}
+.un-menu__rightContents03 :where(.un-menu__contentsBubble) {
+  width: 50%;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__rightContents03 :where(.un-menu__contentsBubble) {
+    width: 57%;
+  }
+}
+
+.un-menu__text {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.un-menu__textMenu,
+.un-menu__price {
+  font-size: calc(12 / 16 * 1rem);
+  font-weight: bold;
+}
+
+.un-menu__textMenu {
+  line-height: 1.8;
+}
+
+.un-menu__price {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  line-height: 1;
+}
+
+.un-menu__button {
+  margin-top: 36px;
+}
+@media screen and (min-width: 769px) {
+  .un-menu__button {
+    margin-top: 50px;
+  }
 }
