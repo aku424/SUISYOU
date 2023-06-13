@@ -107,7 +107,7 @@
                                     <source srcset="<?php echo get_template_directory_uri()?>/img/img_index_06.webp" type="image/webp">
                                     <img src="<?php echo get_template_directory_uri()?>/img/img_index_06.png" alt="">
                                 </picture>
-                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_07.svg" alt="" class="un-menu__contentsBubble">
+                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_07.svg" alt="翠翔といえばこれ！野菜と地鶏が鶏出汁でさらにウマく！" class="un-menu__contentsBubble">
                                 <div class="un-menu__text">
                                     <span class="un-menu__textMenu">焼き鳥盛り合わせ</span>
                                     <span class="un-menu__price">2260円</span>
@@ -137,6 +137,7 @@
                                     <span class="un-menu__price">1610円</span>
                                 </div><!-- /.un-menu__text -->
                             </div><!-- /.un-menu__leftContents01 -->
+
                         </div><!-- /.un-menu__left -->
 
                         <div class="un-menu__right">
@@ -169,26 +170,136 @@
                                     <source srcset="<?php echo get_template_directory_uri()?>/img/img_index_16.webp" type="image/webp">
                                     <img src="<?php echo get_template_directory_uri()?>/img/img_index_16.png" alt="">
                                 </picture>
-                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_17.svg" alt="" class="un-menu__contentsBubble">
+                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_17.svg" alt="やっぱ串10 !他店じゃ出せないこの美味さ！" class="un-menu__contentsBubble">
                                 <div class="un-menu__text">
                                     <span class="un-menu__textMenu">SUISYOU 水炊き</span>
                                     <span class="un-menu__price">1人前 1610円〜</span>
                                 </div><!-- /.un-menu__text -->
                             </div><!-- /.un-menu__rightContents01 -->
+
+
+                            <div class="un-menu__button">
+                                <div class="m-button m-button--right">
+                                    <a href="__dummy__" class="m-button__link">
+                                        <div class="m-button__inner">
+                                            <span class="m-button__text">翠翔のメニューをもっと見る</span>
+                                        </div> 
+                                    </a>
+                                </div><!-- /.m-button -->
+                            </div><!-- /.un-menu__button -->
+
                         </div><!-- /.un-menu__right -->
                     </div><!-- /.un-menu__layout -->
+                </div><!-- /.un-menu -->
+            </div>
+        </div>
+    </div><!-- /.l-content -->
 
-                    <div class="un-menu__button">
+    <div class="l-content course">
+        <div class="l-content__inner">
+            <div class="l-content__body">
+                <div class="un-course">
+                    <div class="un-course__layout">
+                        <h2 class="un-course__heading">翠翔のコ<span>ー</span>ス紹介</h2>
+                        <div class="un-course__body">
+                            <span class="un-course__headingSub m-subTitle">COURSE</span>
+                            <div class="un-course__banner">
+                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_19.svg" alt="乾杯1杯分だけ生ビールOK 飲み放題 2h +1,500円 ずっと生ビールOK! 飲み放題 2h + 1,800円">
+                            </div><!-- /.un-course__banner -->
+
+                            <div class="un-course__carousel splide js-menuCarousel" role="group" aria-label="Splideの基本的なHTML">
+                                <div class="splide__track un-course__carouselInner">
+                                    <ul class="un-course__list splide__list">
+                                        <li class="un-course__item splide__slide">
+                                            <div class="un-course__itemHeading">
+                                                <span class="un-course__itemHeadingMain">華</span>
+                                                <span class="un-course__itemHeadingNumber">全<b>11</b>品</span>
+                                                <span class="un-course__itemHeadingPrice"><b>4.200</b>円</span>
+                                            </div><!-- /.un-course__itemHeading -->
+
+                                            <ul class="un-course__menu">
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="un-course__item splide__slide">
+                                            <div class="un-course__itemHeading">
+                                                <span class="un-course__itemHeadingMain">華</span>
+                                                <span class="un-course__itemHeadingNumber">全<b>11</b>品</span>
+                                                <span class="un-course__itemHeadingPrice"><b>4.200</b>円</span>
+                                            </div><!-- /.un-course__itemHeading -->
+
+                                            <ul class="un-course__menu">
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="un-course__item splide__slide">
+                                            <div class="un-course__itemHeading">
+                                                <span class="un-course__itemHeadingMain">華</span>
+                                                <span class="un-course__itemHeadingNumber">全<b>11</b>品</span>
+                                                <span class="un-course__itemHeadingPrice"><b>4.200</b>円</span>
+                                            </div><!-- /.un-course__itemHeading -->
+
+                                            <ul class="un-course__menu">
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="un-course__item splide__slide">
+                                            <div class="un-course__itemHeading">
+                                                <span class="un-course__itemHeadingMain">華</span>
+                                                <span class="un-course__itemHeadingNumber">全<span>11</span>品</span>
+                                                <span class="un-course__itemHeadingPrice"><span>4.200</span>円</span>
+                                            </div><!-- /.un-course__itemHeading -->
+
+                                            <ul class="un-course__menu">
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                                <li class="un-course__menuItem">テキスト</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="un-course__notion">※全て税込・おひとり様料金 ※2名様から承ります</p>
+                        </div>
+                    </div><!-- /.un-course__layout -->
+
+                    <div class="un-course__button">
                         <div class="m-button m-button--right">
                             <a href="__dummy__" class="m-button__link">
                                 <div class="m-button__inner">
-                                    <span class="m-button__text">翠翔のメニューをもっと見る</span>
+                                    <span class="m-button__text">翠翔のコースをもっと見る</span>
                                 </div> 
                             </a>
                         </div><!-- /.m-button -->
-                    </div><!-- /.un-menu__button -->
+                    </div><!-- /.un-course__button -->
 
-                </div><!-- /.un-menu -->
+                </div><!-- /.un-course -->
             </div>
         </div>
     </div><!-- /.l-content -->

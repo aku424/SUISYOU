@@ -14,7 +14,7 @@ $ff_base: 'PT Sans', sans-serif;
 // =============================
 $base_light: #fff;
 $base_dark: #999;
-$base_light_dark: #222;
+$base_light_dark: #444;
 
 // font-color
 $font_base_color: $base_light;
@@ -23,6 +23,7 @@ $font_sub_dark_color: $base_light_dark;
 
 // background-color
 $background_base_color: #111;
+$background_light_color: $base_light;
 
 // border-color
 $border_base_color: $base_light;
