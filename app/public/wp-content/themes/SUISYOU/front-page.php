@@ -177,7 +177,6 @@
                                 </div><!-- /.un-menu__text -->
                             </div><!-- /.un-menu__rightContents01 -->
 
-
                             <div class="un-menu__button">
                                 <div class="m-button m-button--right">
                                     <a href="__dummy__" class="m-button__link">
@@ -305,41 +304,109 @@
     </div><!-- /.l-content -->
 
 
-    <div class="l-content news">
+    <div class="l-content guidance">
         <div class="l-content__inner">
             <div class="l-content__body">
                 
                 <h2 class="m-heading-type2">お知らせ</h2>
                 
-                <div class="un-news">
-                    <div class="un-news__inner">
-                        <ul class="nu-news__list">
-                            <li class="un-news__item">
-                                <a href="__dummy__" class="un-news__link">
-                                    <time class="un-news__date" datetime="2023-07-23">23/07/23</time>
-                                    <div class="un-news__text">2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト</div>
-                                </a>
-                            </li>
+                <div class="un-guidance">
 
-                            <li class="un-news__item">
-                                <a href="__dummy__" class="un-news__link">
-                                    <time class="un-news__date" datetime="2023-07-23">23/07/23</time>
-                                    <div class="un-news__text">2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト</div>
-                                </a>
-                            </li>
+                    <div class="un-news__button">
+                        <div class="m-button">
+                            <a href="__dummy__" class="m-button__link">
+                                <div class="m-button__inner">
+                                    <span class="m-button__text">お知らせをもっと見る</span>
+                                </div> 
+                            </a>
+                        </div><!-- /.m-button -->
+                    </div><!-- /.un-news__button -->
 
-                        </ul>
-                        <div class="un-news__button">
-                            <div class="m-button">
-                                <a href="__dummy__" class="m-button__link">
-                                    <div class="m-button__inner">
-                                        <span class="m-button__text">お知らせをもっと見る</span>
-                                    </div> 
-                                </a>
-                            </div><!-- /.m-button -->
-                        </div><!-- /.un-news__button -->
-                    </div><!-- /.un-news__inner -->
+                </div><!-- /.un-news -->
+            </div>
+        </div>
+    </div><!-- /.l-content -->
 
+    <div class="l-content guidance">
+        <div class="l-content__inner">
+            <div class="l-content__body">
+                
+                <h2 class="m-heading-type2">店舗案内</h2>
+                
+                <div class="un-guidance">
+                    <ul class="nu-guidance__list">
+                        <li class="un-news__item">
+                            <picture class="un-guidance__media">
+                                <source srcset="<?php echo get_template_directory_uri()?>/img/img_index_20.webp" type="image/webp">
+                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_20.jpg" alt="">
+                            </picture>
+                            <div class="un-guidance__contents">
+                            <h3 class="un-guidance__itemHeading">翠翔駅前店</h3>
+                            <dl class="un-guidance__info">
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">住所</dt>
+                                    <dd class="un-guidance__infoDescription">〒910-0005 福井県福井市大手2丁目5-10</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">営業時間</dt>
+                                    <dd class="un-guidance__infoDescription">17:00-23:00（LO22:30）</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">定休日</dt>
+                                    <dd class="un-guidance__infoDescription">日曜定休（祝前日・祝日は営業）</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">電話番号</dt>
+                                    <dd class="un-guidance__infoDescription">0776-27-2008</dd>
+                                </div>
+                            </dl>
+                            </div><!-- /.un-guidance__contents -->
+                        </li>
+
+                        <li class="un-news__item">
+                            <picture class="un-guidance__media">
+                                <source srcset="<?php echo get_template_directory_uri()?>/img/img_index_21.webp" type="image/webp">
+                                <img src="<?php echo get_template_directory_uri()?>/img/img_index_21.jpg" alt="">
+                            </picture>
+                            <div class="un-guidance__contents">
+                            <h3 class="un-guidance__itemHeading">翠翔片町店</h3>
+                            <dl class="un-guidance__info">
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">住所</dt>
+                                    <dd class="un-guidance__infoDescription">〒910-0023 福井県福井市順化2丁目6-16 高畠ビル</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">営業時間</dt>
+                                    <dd class="un-guidance__infoDescription">17:00-23:00（LO22:30）</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">定休日</dt>
+                                    <dd class="un-guidance__infoDescription">日曜・月曜定休（祝前日・祝日は営業）</dd>
+                                </div>
+
+                                <div class="un-guidance__infoItem">
+                                    <dt class="un-guidance__infoTitle">電話番号</dt>
+                                    <dd class="un-guidance__infoDescription">0776-97-9710</dd>
+                                </div>
+                            </dl>
+                            </div><!-- /.un-guidance__contents -->
+                        </li>
+
+                    </ul>
+                    <div class="un-guidance__button">
+                        <div class="m-button">
+                            <a href="__dummy__" class="m-button__link">
+                                <div class="m-button__inner">
+                                    <span class="m-button__text">店舗案内をもっと見る</span>
+                                </div> 
+                            </a>
+                        </div><!-- /.m-button -->
+                    </div><!-- /.un-news__button -->
 
                 </div><!-- /.un-news -->
             </div>
