@@ -303,24 +303,41 @@
         </div>
     </div><!-- /.l-content -->
 
-
-    <div class="l-content guidance">
+    <div class="l-content news">
         <div class="l-content__inner">
             <div class="l-content__body">
                 
                 <h2 class="m-heading-type2">お知らせ</h2>
                 
-                <div class="un-guidance">
+                <div class="un-news">
+                    <div class="un-news__inner">
+                        <ul class="nu-news__list">
+                            <li class="un-news__item">
+                                <a href="__dummy__" class="un-news__link">
+                                    <time class="un-news__date" datetime="2023-07-23">23/07/23</time>
+                                    <div class="un-news__text">2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト</div>
+                                </a>
+                            </li>
 
-                    <div class="un-news__button">
-                        <div class="m-button">
-                            <a href="__dummy__" class="m-button__link">
-                                <div class="m-button__inner">
-                                    <span class="m-button__text">お知らせをもっと見る</span>
-                                </div> 
-                            </a>
-                        </div><!-- /.m-button -->
-                    </div><!-- /.un-news__button -->
+                            <li class="un-news__item">
+                                <a href="__dummy__" class="un-news__link">
+                                    <time class="un-news__date" datetime="2023-07-23">23/07/23</time>
+                                    <div class="un-news__text">2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト2023年三国花火の予約を受け付けております。テキストテキストテキスとテキスト</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="un-news__button">
+                            <div class="m-button">
+                                <a href="__dummy__" class="m-button__link">
+                                    <div class="m-button__inner">
+                                        <span class="m-button__text">お知らせをもっと見る</span>
+                                    </div> 
+                                </a>
+                            </div><!-- /.m-button -->
+                        </div><!-- /.un-news__button -->
+                    </div><!-- /.un-news__inner -->
+
 
                 </div><!-- /.un-news -->
             </div>
